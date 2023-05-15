@@ -226,11 +226,11 @@
             var currentPageIndex = 0;
             $(document).on("swipleft",".ui-page", function () {
                 currentPageIndex = (currentPageIndex + 1) % pageArray.length;
-                $.mobile.navigate(pageArray[currentPageIndex]);:
+                $.mobile.navigate(pageArray[currentPageIndex]);
             })
             $(document).on("swiperight",".ui=page", function () {
                 currentPageIndex = (currentPageIndex - 1 + pageArray.length) % pageArray.length;
-                $.mobile.navigate(pageArray[currentPageIndex]);:
+                $.mobile.navigate(pageArray[currentPageIndex]);
             })
         })
     </script>
