@@ -224,11 +224,11 @@
         $(document).ready(function () {
             var pageArray = [ "#home", "#hobbies", "#experience", "#assignments"];
             var currentPageIndex = 0;
-            $(document).on("swipleft",".ui-page", function () {
+            $(document).on("swipeleft",".ui-page", function () {
                 currentPageIndex = (currentPageIndex + 1) % pageArray.length;
                 $.mobile.navigate(pageArray[currentPageIndex]);
             })
-            $(document).on("swiperight",".ui=page", function () {
+            $(document).on("swiperight",".ui-page", function () {
                 currentPageIndex = (currentPageIndex - 1 + pageArray.length) % pageArray.length;
                 $.mobile.navigate(pageArray[currentPageIndex]);
             })
